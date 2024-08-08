@@ -35,6 +35,8 @@ function increaseAwayScoreThree() {
 }
 
 function resetScore() {
+    homeScore = 0
+    awayScore = 0
     homeScoreEl.textContent = 0
     awayScoreEl.textContent = 0
 }
