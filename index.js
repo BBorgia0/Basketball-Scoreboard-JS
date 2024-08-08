@@ -1,35 +1,40 @@
-let awayStoreEl =document.getElementById("away-score")
-let homeStoreEl = document.getElementById("home-score")
+let awayScoreEl = document.getElementById("away-score")
+let homeScoreEl = document.getElementById("home-score")
 let homeScore = 0
 let awayScore = 0
 
 
-function increaseHomeScoreOne(){
+function increaseHomeScoreOne() {
     homeScore += 1
-    homeStoreEl.textContent = homeScore
+    homeScoreEl.textContent = homeScore
 }
 
 function increaseHomeScoreTwo() {
     homeScore += 2
-    homeStoreEl.textContent = homeScore
+    homeScoreEl.textContent = homeScore
 }
 
 function increaseHomeScoreThree() {
     homeScore += 3
-    homeStoreEl.textContent = homeScore
+    homeScoreEl.textContent = homeScore
 }
 
 function increaseAwayScoreOne() {
     awayScore += 1
-    awayStoreEl.textContent = awayScore
+    awayScoreEl.textContent = awayScore
 }
 
 function increaseAwayScoreTwo() {
     awayScore += 2
-    awayStoreEl.textContent = awayScore
+    awayScoreEl.textContent = awayScore
 }
 
 function increaseAwayScoreThree() {
     awayScore += 3
-    awayStoreEl.textContent = awayScore
+    awayScoreEl.textContent = awayScore
+}
+
+function resetScore() {
+    homeScoreEl.textContent = 0
+    awayScoreEl.textContent = 0
 }
